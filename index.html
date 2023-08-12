@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+	
+    <!-- <link rel="stylesheet" href="Hut.css">
+    <script src="Huk.js"></script> -->
+    <title>Image Gallery</title>
+</head>
+<body id="main">
+        <div class="row-1">
+            <img src="ai.jpg">
+        </div>
+
+        <div class="row-2">
+            <img src="ai1.jpg   " alt="img2">
+        </div>
+
+         <div class="row-3">
+            <img src="ai3.jpeg">
+        </div>
+    
+        <div class="row-4">
+            <img src="ai4.jpg">
+        </div> 
+ 
+        <script  >
+            const urlParams = new URLSearchParams(window.location.search);
+const password = urlParams.get("password") || null;
+if (password !== "hulk") {
+    document.body.innerHTML= "<center><h3 class='text-danger'>Access Denied<h3></center>"
+}
+
+        </script>
+        <script  src="Huk.js" type="module">
+
+        </script>
+</body>
+</html>
